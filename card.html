@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exam admin dashboard</title>
+<style>
+
+.data {
+   
+    height: 100vh;
+    margin-left: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background: #1D2951;
+    line-height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+label {
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 600;
+    background-color: rgb(55, 34, 246);
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(49, 27, 214);
+    color: white;
+    transition: 0.5s;
+}
+
+.side-menu {
+    position: fixed;
+    background: #1D2951;
+    width: 250px;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.side-menu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover {
+    background: rgb(20, 54, 165);
+    padding-left: 20px;
+}
+
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar {
+    float: right;
+    margin-top: 20px;
+    display: none;
+    margin-right: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+.side-menu .Logout {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .data {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:650px) {
+    .data {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        background-color: #4c516d;
+        transition: all 0.5s;
+    }
+
+    .side-menu a i {
+        display: none;
+    }
+
+    .side-menu a span {
+        display: block;
+    }
+
+    .side-menu .Logout {
+        display: block;
+    }
+
+    nav .menu-bar {
+        display: block;
+    }
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
+
+
+body{
+background-image: url("https://cdn.mos.cms.futurecdn.net/Y9e8wrwqYEvceR2UECrVVf-320-80.jpeg");
+background-size:cover;
+}
+
+
+.wrap{
+	width:1000px;
+margin: auto;
+margin-top:100px;
+}
+
+.card{
+	box-shadow: 0 4px 8px  0 rgba(0,0,0,0.6);
+	transition:0.4s;
+width:300px;
+backgroud:#fff;
+text-align:center;
+font-size:16px;
+font-family:sans-serif;
+float:left;
+margin:10px;
+
+}
+.card:hover{
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+}
+.container{
+padding:2px 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<nav> <label>Menu</label>
+        <ul>
+            <li><a href="#">Logout</a></li>
+        </ul> <label for="menu" class="menu-bar"> <i class="fa fa-bars"></i> </label>
+    </nav>
+    <div class="side-menu">
+        <center> <img src=https://www.mscepune.in/gcc/Images/logomsce.jpg  height="90" width="90"> <br><br>
+            <h2>Typing Exam</h2>
+        </center> <br> <a href="Exam.html"><i class="fa fa-user"></i><span>Exams</span></a> 
+		<a href="Examform.html"><i class="fa fa-user"></i><span>Exams Form</span></a> 	
+                                  <a href="Result.html"><i class="fa fa-envelope"></i><span>Result</span></a> 
+                                   <a href="Halltickets.html"><i class="fa fa-shopping-basket"></i><span>Hallticks</span></a>
+                               <a href="Practise.html"><i class="fa fa-sellsy"></i><span>Practice Papers </span></a> 
+                                <a href="qs.html"><i class="fa fa-ban"></i><span>MCQS</span></a> 
+                                  
+                                      <a href="#" class="Logout"><span>Logout</span></a>
+    </div>
+    <div class="data"> </div>
+
+
+
+
+<div class ="wrap">
+<div class ="card">
+	<img src="C:\Users\Admin\Downloads\i2.png" style="width:100%">
+	<div class="container">
+	<h3> <b> English Typing </b></h3>
+</div>
+</div>
+
+<div class ="wrap">
+<div class ="card">
+	<img src="C:\Users\Admin\Desktop\i3.jpg" style="width:100%">
+	<div class="container">
+	<h3> <b> Marathi Typing </b></h3>
+</div>
+</div>
+
+<div class ="wrap">
+<div class ="card">
+	<img src="C:\Users\Admin\Desktop\i4.jpg" style="width:100%">
+	<div class="container">
+	<h3> <b> Hindi Typing </b></h3>
+</div>
+</div>
+
+
+
+
+</body> 
+</html>
+
